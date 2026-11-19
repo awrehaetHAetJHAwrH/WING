@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Wing Digital Studio — Give Your Ideas Wings</title>
+<meta name="description" content="Websites, films, and visual identities. Thoughtfully crafted to make your business impossible to overlook."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+ :root{--aubergine:#191321;--blush:#ded9e6;--copper:#a84cff;--paper:#0b0a0e;--ink:#eeeaf3;--subtle:#b2aaba;--border:#302838}
+ *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'Manrope',sans-serif;overflow-x:clip}
+ a{text-decoration:none;color:inherit}h1,h2,h3,p{margin:0}h2{font-size:clamp(34px,3.5vw,51px);line-height:1.16;letter-spacing:-2px;font-weight:600;white-space:pre-line}p{line-height:1.8}
+ .wrap{max-width:1180px;margin:0 auto;padding:0 5%}
+ header.site{display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:96px;border-bottom:1px solid var(--border);background:#08070a;position:sticky;top:0;z-index:10}
+ .brand img{height:64px;width:auto;object-fit:contain}
+ .langs{display:flex;gap:10px} .langs button{background:none;border:1px solid var(--border);color:var(--subtle);border-radius:5px;padding:8px 14px;font-size:12px;font-weight:600;cursor:pointer} .langs button.on{background:var(--copper);color:#fff;border-color:var(--copper)}
+ .hero{padding:60px 5% 50px;background:radial-gradient(ellipse at 80% 40%,#28113e 0,transparent 48%),#0b0a0e;position:relative;overflow:hidden}
+ .eyebrow{font-size:10px;font-weight:600;letter-spacing:1.8px;color:var(--subtle);display:inline-flex;gap:9px;align-items:center}
+ .eyebrow .dot{width:6px;height:6px;background:var(--copper);border-radius:50%}
+ .hero h1{font-size:clamp(48px,7vw,104px);font-weight:600;letter-spacing:-5px;line-height:1.04;margin:30px 0} .hero h1 span{color:#c0b9c9;font-weight:500}
+ .hero p{font-size:15px;color:var(--subtle);max-width:480px;margin-bottom:26px}
+ .btn{display:inline-flex;align-items:center;gap:18px;padding:16px 22px;background:#7525b7;color:#fff;border-radius:6px;font-size:13px;font-weight:600;border:0} .btn:hover{background:#973ee0}
+ .section{padding:80px 5%} .section-head{display:flex;justify-content:space-between;gap:40px;align-items:flex-end;margin-bottom:40px} .section-head p{max-width:330px;color:var(--subtle);font-size:13px}
+ .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+ .card{padding:28px;background:#17141c;border:1px solid var(--border);border-radius:7px;min-height:300px;display:flex;flex-direction:column} .card.dark{background:#292033;border-color:#574367}
+ .card .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:36px;color:var(--copper)} .card h3{font-size:20px;font-weight:600;margin-bottom:14px} .card p{font-size:12px;color:var(--subtle)} .card.dark p{color:#d0c7d7}
+ .studio{display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:center} .studio img{width:100%;max-width:420px;border-radius:6px} .studio h2{margin:18px 0 22px} .studio p{font-size:13px;color:var(--subtle);margin-bottom:14px}
+ .days{display:flex;gap:18px;padding-top:22px;margin-top:22px;border-top:1px solid var(--border);color:var(--copper)} .days h3{font-size:18px;color:var(--ink);margin:6px 0} .days p{font-size:11px;color:var(--subtle);max-width:300px}
+ .support{background:#24152f} .support h2{margin:18px 0 30px} .support h3{font-size:18px;margin:14px 0} .support p{font-size:13px;color:var(--subtle);max-width:460px}
+ .contact{display:grid;grid-template-columns:.8fr 1.2fr;gap:8%} .contact h2{font-size:clamp(38px,4.2vw,60px);margin:20px 0} .contact p{font-size:13px;color:var(--subtle);max-width:320px}
+ .email{margin:34px 0} .email a{display:inline-flex;gap:12px;font-size:16px;border-bottom:1px solid var(--copper);padding-bottom:8px;color:var(--ink)}
+ .panel{background:#17141c;border:1px solid var(--border);border-radius:7px;padding:30px} .panel h3{font-size:20px;margin-bottom:8px} .panel p.note{font-size:11px;color:var(--subtle);margin-bottom:20px}
+ .panel ul{list-style:none;padding:0;margin:0} .panel li{padding:10px 0;border-bottom:1px solid var(--border);font-size:13px} .panel li b{color:var(--subtle);font-weight:600;display:block;font-size:11px;text-transform:uppercase;letter-spacing:.5px}
+ footer.site{background:#070609;padding:40px 5%;display:flex;justify-content:space-between;gap:24px;align-items:center;flex-wrap:wrap} footer img{height:70px} footer p{font-size:11px;color:#aaa1b1;margin-top:8px} footer .links{display:flex;flex-direction:column;gap:12px;align-items:flex-end;font-size:11px} footer .links a{color:var(--copper)}
+ .limit{background:#17141c;border:1px dashed var(--border);border-radius:7px;padding:24px;margin:40px auto;max-width:1180px} .limit h3{color:var(--copper);margin-bottom:10px;font-size:15px} .limit p{font-size:12px;color:var(--subtle)}
+ [data-lang]{display:none} [data-lang].on{display:block} [dir=rtl]{font-family:'Noto Sans Arabic','Manrope',sans-serif} [dir=rtl] h2{letter-spacing:0;line-height:1.5}
+ @media(max-width:760px){.grid3{grid-template-columns:1fr}.studio,.contact{grid-template-columns:1fr;gap:30px}.section-head{display:block}.hero h1{letter-spacing:-3px}}
+</style>
+</head>
+<body>
+<header class="site">
+ <a class="brand" href="#"><img src="https://horizons-cdn.hostinger.com/e5afb6df-0a75-42b9-b484-9789c016a223/a853e87f83f390b39020212a5549e9cf.png" alt="Wing Digital Studio"/></a>
+ <div class="langs"><button data-to="en" class="on">EN</button><button data-to="ur">اردو</button><button data-to="ar">عربي</button></div>
+</header>
+
+<!-- ENGLISH -->
+<div data-lang="en" class="on" dir="ltr">
+ <section class="hero"><span class="eyebrow"><span class="dot"></span>INDEPENDENT DIGITAL CREATIVE STUDIO</span>
+  <h1>Good ideas.<br/><span>Remarkably made.</span></h1>
+  <p>Websites, films, and visual identities. Thoughtfully crafted to make your business impossible to overlook.</p>
+  <a class="btn" href="#contact">Start a project →</a></section>
+ <section class="section"><div class="section-head"><div><span class="eyebrow">01 / WHAT WE DO</span><h2>Your vision. Our craft.</h2></div><p>Three creative disciplines. One considered approach. Built around you, never a template.</p></div>
+  <div class="grid3">
+   <div class="card dark"><div class="top"><span>01</span></div><h3>Website Development</h3><p>Custom business, hotel, restaurant, personal, and ecommerce websites. Designed around your goals, built for every screen.</p></div>
+   <div class="card"><div class="top"><span>02</span></div><h3>Video Editing</h3><p>Promotional films, social media videos, and business advertisements. Sharp storytelling, purposeful cuts, and polished finishing.</p></div>
+   <div class="card"><div class="top"><span>03</span></div><h3>Graphic Designing</h3><p>Distinctive logos, posters, banners, and social media visuals. A consistent identity that feels unmistakably yours.</p></div>
+  </div></section>
+ <section class="section studio"><img src="https://horizons-cdn.hostinger.com/e5afb6df-0a75-42b9-b484-9789c016a223/a853e87f83f390b39020212a5549e9cf.png" alt="Wing Digital Studio"/><div><span class="eyebrow">02 / THE STUDIO</span><h2>A small team.
+A thoughtful approach.</h2><p>We are Wing Digital Studio, an independent digital creative agency bringing design and technology together. We listen first, create with intention, and keep you involved from the first idea to the final detail.</p><p>Whether you're starting something new or giving your business a fresh perspective, we shape the work around your requirements. Every project receives a personal quote by email.</p><div class="days"><div><span>OUR STUDIO DAYS</span><h3>Friday &amp; Saturday</h3><p>Our only working days. Requests are welcome anytime; we review and respond on Friday and Saturday.</p></div></div></div></section>
+ <section class="section support"><div><span class="eyebrow">03 / BEYOND THE LAUNCH</span><h2>Your launch is just
+the beginning.</h2></div><div><h3>One year of free website changes!</h3><p>Every website we create includes a full year of free changes and updates. Need to refresh your content or update your site? Request changes during your first year without additional charges.</p><p>After the first year, changes are quoted individually according to the work required. We'll communicate and agree the cost directly with you before proceeding.</p></div></section>
+ <section id="contact" class="section contact"><div><span class="eyebrow">04 / LET'S MAKE IT HAPPEN</span><h2>Have an idea?
+Let's talk.</h2><p>Tell us what you have in mind. We'll get back to you by email with the next steps and a personalised quote.</p><div class="email"><span class="eyebrow">WRITE TO US</span><br/><a href="mailto:saadmaazq@gmail.com">saadmaazq@gmail.com →</a></div></div>
+  <div class="panel"><h3>Tell us about your project</h3><p class="note">No public price lists. Just a quote that fits your project. This static snapshot cannot submit the form — please use the live site.</p>
+   <ul><li><b>Services</b>Website Development · Video Editing · Graphic Designing</li><li><b>Working days</b>Friday &amp; Saturday</li><li><b>Contact</b>saadmaazq@gmail.com</li></ul></div></section>
+</div>
+
+<!-- URDU -->
+<div data-lang="ur" dir="rtl">
+ <section class="hero"><span class="eyebrow"><span class="dot"></span>آزاد ڈیجیٹل تخلیقی اسٹوڈیو</span>
+  <h1>بہترین خیالات۔<br/><span>شاندار تخلیق۔</span></h1>
+  <p>ویب سائٹس، ویڈیوز اور بصری شناخت۔ آپ کے کاروبار کو نمایاں کرنے کے لیے سوچ سمجھ کر تیار کردہ تخلیقی کام۔</p>
+  <a class="btn" href="#contact">پروجیکٹ شروع کریں →</a></section>
+ <section class="section"><div class="section-head"><div><span class="eyebrow">01 / ہماری خدمات</span><h2>آپ کا تصور۔ ہماری مہارت۔</h2></div><p>تین تخلیقی شعبے۔ ایک سوچا سمجھا طریقہ۔ ہر کام آپ کی ضروریات کے مطابق۔</p></div>
+  <div class="grid3">
+   <div class="card dark"><div class="top"><span>01</span></div><h3>ویب سائٹ ڈویلپمنٹ</h3><p>کاروبار، ہوٹل، ریسٹورنٹ، ذاتی منصوبوں اور آن لائن اسٹورز کے لیے حسب ضرورت ویب سائٹس۔</p></div>
+   <div class="card"><div class="top"><span>02</span></div><h3>ویڈیو ایڈیٹنگ</h3><p>پروموشنل فلمیں، سوشل میڈیا ویڈیوز اور کاروباری اشتہارات۔ مؤثر کہانی، بہترین ایڈیٹنگ۔</p></div>
+   <div class="card"><div class="top"><span>03</span></div><h3>گرافک ڈیزائننگ</h3><p>منفرد لوگو، پوسٹر، بینر اور سوشل میڈیا ڈیزائن۔ ایک مربوط شناخت جو آپ کے برانڈ کی نمائندگی کرے۔</p></div>
+  </div></section>
+ <section class="section studio"><img src="https://horizons-cdn.hostinger.com/e5afb6df-0a75-42b9-b484-9789c016a223/a853e87f83f390b39020212a5549e9cf.png" alt="Wing Digital Studio"/><div><span class="eyebrow">02 / ہمارا اسٹوڈیو</span><h2>چھوٹی ٹیم۔
+سوچا سمجھا انداز۔</h2><p>ہم Wing Digital Studio ہیں، ایک آزاد ڈیجیٹل تخلیقی ایجنسی جو ڈیزائن اور ٹیکنالوجی کو یکجا کرتی ہے۔ ہم پہلے آپ کی بات سنتے ہیں اور ہر مرحلے میں آپ کو شامل رکھتے ہیں۔</p><p>ہر پروجیکٹ آپ کی ضروریات کے مطابق ہوتا ہے۔ قیمت انفرادی طور پر ای میل کے ذریعے بتائی جاتی ہے۔</p><div class="days"><div><span>ہمارے کام کے دن</span><h3>جمعہ اور ہفتہ</h3><p>صرف یہی ہمارے کام کے دن ہیں۔ درخواست کسی بھی وقت بھیجیں؛ جواب جمعہ اور ہفتہ کو دیا جاتا ہے۔</p></div></div></div></section>
+ <section class="section support"><div><span class="eyebrow">03 / لانچ کے بعد بھی</span><h2>لانچ تو بس
+شروعات ہے۔</h2></div><div><h3>ویب سائٹ میں ایک سال تک مفت تبدیلیاں!</h3><p>ہماری ہر تیار کردہ ویب سائٹ کے ساتھ پورے ایک سال کی مفت تبدیلیاں اور اپ ڈیٹس شامل ہیں۔</p><p>پہلے سال کے بعد تبدیلیوں کی قیمت کام کے مطابق طے ہوگی۔ آگے بڑھنے سے پہلے لاگت براہ راست آپ کو بتائی جائے گی۔</p></div></section>
+ <section id="contact" class="section contact"><div><span class="eyebrow">04 / آئیے مل کر بنائیں</span><h2>کوئی خیال ہے؟
+بات کرتے ہیں۔</h2><p>اپنی ضرورت بتائیں۔ ہم اگلے مراحل اور آپ کے پروجیکٹ کی قیمت ای میل کے ذریعے بھیجیں گے۔</p><div class="email"><span class="eyebrow">ہمیں ای میل کریں</span><br/><a href="mailto:saadmaazq@gmail.com" dir="ltr">saadmaazq@gmail.com →</a></div></div>
+  <div class="panel"><h3>اپنے پروجیکٹ کے بارے میں بتائیں</h3><p class="note">یہ اسٹیٹک فائل فارم جمع نہیں کر سکتی — براہ کرم لائیو سائٹ استعمال کریں۔</p>
+   <ul><li><b>خدمات</b>ویب سائٹ ڈویلپمنٹ · ویڈیو ایڈیٹنگ · گرافک ڈیزائننگ</li><li><b>کام کے دن</b>جمعہ اور ہفتہ</li><li><b>رابطہ</b>saadmaazq@gmail.com</li></ul></div></section>
+</div>
+
+<!-- ARABIC -->
+<div data-lang="ar" dir="rtl">
+ <section class="hero"><span class="eyebrow"><span class="dot"></span>استوديو إبداعي رقمي مستقل</span>
+  <h1>أفكار رائعة.<br/><span>تنفيذ استثنائي.</span></h1>
+  <p>مواقع إلكترونية، فيديوهات، وهويات بصرية. نصنعها بعناية لتمنح أعمالك حضورًا لا يُنسى.</p>
+  <a class="btn" href="#contact">ابدأ مشروعًا →</a></section>
+ <section class="section"><div class="section-head"><div><span class="eyebrow">01 / ماذا نقدم</span><h2>رؤيتك. إبداعنا.</h2></div><p>ثلاثة تخصصات إبداعية. نهج واحد مدروس. مصمم حول احتياجاتك، وليس قالبًا جاهزًا.</p></div>
+  <div class="grid3">
+   <div class="card dark"><div class="top"><span>01</span></div><h3>تطوير المواقع</h3><p>مواقع مخصصة للشركات والفنادق والمطاعم والمشاريع الشخصية والمتاجر الإلكترونية.</p></div>
+   <div class="card"><div class="top"><span>02</span></div><h3>مونتاج الفيديو</h3><p>فيديوهات ترويجية ومحتوى للتواصل الاجتماعي وإعلانات للأعمال. سرد مؤثر ومونتاج دقيق.</p></div>
+   <div class="card"><div class="top"><span>03</span></div><h3>التصميم الجرافيكي</h3><p>شعارات مميزة وملصقات وبنرات وتصاميم للتواصل الاجتماعي. هوية متناسقة تعبّر عن علامتك.</p></div>
+  </div></section>
+ <section class="section studio"><img src="https://horizons-cdn.hostinger.com/e5afb6df-0a75-42b9-b484-9789c016a223/a853e87f83f390b39020212a5549e9cf.png" alt="Wing Digital Studio"/><div><span class="eyebrow">02 / الاستوديو</span><h2>فريق صغير.
+نهج مدروس.</h2><p>نحن Wing Digital Studio، وكالة إبداعية رقمية مستقلة تجمع بين التصميم والتقنية. نستمع أولًا، ونبدع بعناية، ونشركك من الفكرة الأولى حتى التفاصيل الأخيرة.</p><p>يحصل كل مشروع على عرض سعر شخصي عبر البريد الإلكتروني.</p><div class="days"><div><span>أيام عمل الاستوديو</span><h3>الجمعة والسبت</h3><p>هما يوما العمل الوحيدان. يمكنك إرسال طلبك في أي وقت؛ نراجعه ونرد يوم الجمعة والسبت.</p></div></div></div></section>
+ <section class="section support"><div><span class="eyebrow">03 / ما بعد الإطلاق</span><h2>الإطلاق ليس سوى
+البداية.</h2></div><div><h3>عام من التغييرات المجانية للموقع!</h3><p>كل موقع ننشئه يتضمن عامًا كاملًا من التغييرات والتحديثات المجانية.</p><p>بعد السنة الأولى، تُسعّر التغييرات بشكل فردي حسب العمل المطلوب. نبلغك بالتكلفة مباشرة ونحصل على موافقتك قبل المتابعة.</p></div></section>
+ <section id="contact" class="section contact"><div><span class="eyebrow">04 / لنصنع شيئًا مميزًا</span><h2>لديك فكرة؟
+لنتحدث.</h2><p>أخبرنا بما تفكر فيه. سنرد عبر البريد الإلكتروني بالخطوات التالية وعرض سعر مخصص.</p><div class="email"><span class="eyebrow">راسلنا</span><br/><a href="mailto:saadmaazq@gmail.com" dir="ltr">saadmaazq@gmail.com →</a></div></div>
+  <div class="panel"><h3>أخبرنا عن مشروعك</h3><p class="note">لا يمكن لهذه الملف الثابت إرسال النموذج — يرجى استخدام الموقع الحي.</p>
+   <ul><li><b>الخدمات</b>تطوير المواقع · مونتاج الفيديو · التصميم الجرافيكي</li><li><b>أيام العمل</b>الجمعة والسبت</li><li><b>تواصل</b>saadmaazq@gmail.com</li></ul></div></section>
+</div>
+
+<div class="limit">
+ <h3>About this file</h3>
+ <p>This is a static, self-contained snapshot of the Wing Digital Studio public homepage (English, Urdu, Arabic) with the studio's visual branding. It preserves the public-facing content and design. It does <strong>not</strong> include the live project-request form submission, the administrator sign-in, the private studio dashboard, server-side pricing, or realtime features — those require the running application and a database. To use those, visit the live site.</p>
+</div>
+
+<footer class="site">
+ <div><img src="https://horizons-cdn.hostinger.com/e5afb6df-0a75-42b9-b484-9789c016a223/a853e87f83f390b39020212a5549e9cf.png" alt="Wing Digital Studio"/><p>Give Your Ideas Wings.</p></div>
+ <div class="links"><a href="mailto:saadmaazq@gmail.com">saadmaazq@gmail.com</a><span>© 2026 Wing Digital Studio. All rights reserved.</span></div>
+</footer>
+
+<script>
+ document.querySelectorAll('.langs button').forEach(function(b){b.addEventListener('click',function(){
+  var lang=b.getAttribute('data-to');document.querySelectorAll('.langs button').forEach(function(x){x.classList.toggle('on',x===b)});
+  document.querySelectorAll('[data-lang]').forEach(function(s){s.classList.toggle('on',s.getAttribute('data-lang')===lang)});
+  document.documentElement.lang=lang;document.documentElement.dir=(lang==='en'?'ltr':'rtl');
+  window.scrollTo(0,0);
+ });});
+</script>
+</body>
+</html>
